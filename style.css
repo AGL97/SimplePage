@@ -31,13 +31,13 @@ header
 .menuAltImage
 {
     display:block;
-    position: hidden;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 1;
 }
 
-.navNormal
+.containerNav
 {
     display: flex;  
     position: fixed;
@@ -49,21 +49,27 @@ header
     border-style: solid;
 }
 
-.links
+
+.navNormal
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 0;    
-    margin: 5px;
+    display: flex;  
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100px; 
+    height: 100px;
+    background-color: "transparent";
+    flex-direction: column;
+    text-align: center;
 }
 
-.links > a
-{
+.navNormal > a
+{    
+    
     margin-left: 4px;
     border: 1px solid darkseagreen ;
     border-radius: 5px;
+    margin-bottom: 3px;
     padding: 5px;
     background: -webkit-linear-gradient(top,#92BDE6,#69A8E3, #4B9FEE);
     text-decoration: none;
@@ -170,10 +176,7 @@ h1
     }    
     
     
-    .navAlternativa
-    /*{
-        display: flex;
-    }*/
+    
     
     
 
