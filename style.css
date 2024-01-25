@@ -31,7 +31,7 @@ header
 .menuAltImage
 {
     display:block;
-    position: absolute;
+    position: hidden;
     top: 0;
     right: 0;
     z-index: 1;
@@ -49,8 +49,7 @@ header
     border-style: solid;
 }
 
-
-.navNormal
+.navTamañoPequeño
 {
     display: flex;  
     position: absolute;
@@ -63,6 +62,20 @@ header
     text-align: center;
 }
 
+
+.navNormal
+{
+    display: flex;  
+    position: relative;
+    justify-content: flex-end;
+    top: 0px;
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 20px;
+    background-color: "transparent";
+    text-align: center;
+}
+
 .navNormal > a
 {    
     
@@ -70,6 +83,7 @@ header
     border: 1px solid darkseagreen ;
     border-radius: 5px;
     margin-bottom: 3px;
+    margin-right: 5px;
     padding: 5px;
     background: -webkit-linear-gradient(top,#92BDE6,#69A8E3, #4B9FEE);
     text-decoration: none;
