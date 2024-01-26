@@ -1,50 +1,27 @@
-let menuAlt = document.querySelector(".menuAlt");
-let opcionesAlt =  document.querySelector(".OpcioneAlt");
-let linkAltt =  document.querySelectorAll(".OpcioneAlt > a");
-let visible = false;
+let refMenuBtn = document.querySelector(".menuAltImage")
 
-menuAlt.addEventListener("click",function()
-{    
-    if(!visible)
-    {
-        opcionesAlt.style.display="flex";
-        linkAltt.forEach(element => {
-            element.addEventListener("click",function () {
-                element.style.display="block";            
-            })})
-        visible = true;
-    }
-    else
-    {
-        opcionesAlt.style.display="none";
-        linkAltt.forEach(element => {
-            element.addEventListener("click",function () {
-                element.style.display="none";            
-            })})
-        visible = false;
-    }
-});
+let refNav = document.querySelector("nav")
 
-linkAltt.forEach(element => {
-    var t2 = document.querySelectorAll(".OpcioneAlt > a");
-    t2.forEach(element => {
-        element.addEventListener("click",function () {
-        opcionesAlt.style.display = "none";     
-     })
-    });
-    
-});
+let refLinks = document.querySelectorAll("a")
 
-
+refMenuBtn.addEventListener("click",function () {
+    refNav.classList.toggle("navAlt")    
+})
 
 window.addEventListener("resize",function () {
-    if(document.body.clientWidth>480)
+    var size = this.document.body.clientWidth;
+    if(size>720)
     {
-        linkAltt.forEach(element => {
-            element.addEventListener("click",function () {
-                element.style.display="none";            
-            })})
-        visible = false;
+        refNav.classList.remove("navAlt"); 
     }
-    
+})
+
+refLinks.forEach(i => {
+    i.addEventListener("click",function () {
+        refNav.classList.toggle("navAlt")  
+    })
 });
+
+
+
+    
