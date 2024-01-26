@@ -154,14 +154,16 @@ h1
 
     .navNormal
     {
-        display: block;  
+        display: flex; 
+        flex-direction: column;
         position: fixed;
-        top: 50px;
+        overflow: hidden;
+        top: 35px;
         right: 0;
-        width: 0; 
-        height: 0;
+        height: 0px;
         background-color: "transparent";
         text-align: center;
+        transition: height cubic-bezier(0,.49,.77,1.48) 1000ms 0ms;
     }    
 
     .navNormal.navAlt
@@ -171,10 +173,10 @@ h1
         flex-direction: column;
         top: 35px;
         right: 0;
-        width: 100px; 
-        height: 40px;
+        height: 150px;
         background-color: "transparent";
         text-align: center;
+        transition: height cubic-bezier(0,.49,.77,1.48) 1000ms 0ms;
     }
 
     
