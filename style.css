@@ -226,25 +226,25 @@ h1
         flex-direction: column;
         position: fixed;
         overflow: hidden;
-        top: 43px;
-        right: 0;
         height: 0px;
         background-color: "transparent";
         text-align: center;
-        transition: height cubic-bezier(0,.49,.77,1.48) 1000ms 0ms;
     }    
 
     .navNormal.navAlt
     {
         display: flex;  
-        position: fixed;
+        position:absolute;
         flex-direction: column;
+        top: 43px;
+        right: 0px;
         height: 150px;
         background-color: "transparent";
         text-align: center;
-        transition: height cubic-bezier(0,.49,.77,1.48) 1000ms 0ms;
         border-radius: 10px;
         margin-top: 2px;
+        
+        transition: height cubic-bezier(0,.49,.77,1.48) 1000ms 0ms;
     }
 
     h1

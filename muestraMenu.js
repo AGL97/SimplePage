@@ -19,7 +19,8 @@ window.addEventListener("resize",function () {
 
 refLinks.forEach(i => {
     i.addEventListener("click",function () {
-        refNav.classList.toggle("navAlt")  
+        refNav.classList.toggle("navAlt") 
+         
     })
 });
 
