@@ -19,7 +19,8 @@ body
 header
 {
     width: 100%; 
-    position: relative; /*añadido*/
+    position: relative; /*añadido*/ 
+
 }
 
 .manzanita
@@ -52,7 +53,7 @@ header
     /*
         position: fixed;
     */
-    position: fixed;    
+    position: relative;
     /*
         top: 0;
     */
@@ -88,7 +89,6 @@ header
     align-items: center;
     text-align: center;
 }
-
 
 .navNormal > a
 {    
@@ -138,6 +138,7 @@ nav > a:hover
 main
 {
     margin-top: 36px;
+    max-width: 1366px;
 }
 
 main > div
@@ -192,6 +193,25 @@ h1
    border-radius: 5px;
    cursor: pointer;
 }
+
+
+/* .contedorBarra
+{
+    margin-top: 5px;
+    width: 500px;
+    height: 40px;
+    background-color: #fff; 
+    border: 1px solid #333;
+}
+
+.barra
+{
+    width: 0;
+    height: 38px; 
+    background-color: rgb(76, 243, 42);
+} */
+
+
 
 @media (width<720px)
 {

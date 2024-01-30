@@ -24,5 +24,19 @@ refLinks.forEach(i => {
 });
 
 
+// document.querySelector(".contedorBarra").addEventListener("mousemove",(event) => 
+// {
+//     var ancho = event.offsetX;
+//     if(ancho<0)
+//     {
+//         ancho = 0;
+//     }
+//     else if (ancho>499) {
+//         ancho = 498;
+//     } 
+//     document.querySelector(".barra").style.width = ancho + "px";
+// })
+
+
 
     
