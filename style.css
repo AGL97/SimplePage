@@ -6,7 +6,8 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Impact, sans-serif;
+    font-family: Raleway;
+    font-weight: 50px;
 }
 
 header
@@ -164,6 +165,7 @@ h1
     white-space: nowrap; /*añadido*/
     padding: 5px 8px; /*añadido*/
     color: #fff; /*añadido*/
+
     /* border-style: solid;
     border-color: darkseagreen; */
     /* width: 20%; */
@@ -245,6 +247,11 @@ h1
         margin-right: 2px;
         margin-left: auto;
     }
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway-VariableFont_wght.ttf");
 }
 
 
