@@ -6,7 +6,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Arial Narrow Bold';
+    font-family: Impact, sans-serif;
 }
 
 header
