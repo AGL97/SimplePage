@@ -247,6 +247,11 @@ h1
         margin-right: 2px;
         margin-left: auto;
     }
+    nav > a:hover
+    {
+        background: #ffffff;
+        color: #3677b6;
+    }
 }
 
 @font-face {
