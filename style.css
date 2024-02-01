@@ -115,7 +115,7 @@ nav > a:hover
     /* background: #ffffff;
     color: #3677b6;  */
     cursor: pointer;     
-    transition: all 200ms 0s; 
+    transition: all 100ms 0s; 
     border-bottom: 3px solid #E8E7EA;
     /* background: aliceblue; */
 }
