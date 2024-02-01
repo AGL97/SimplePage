@@ -13,12 +13,14 @@ body
 header
 {
     width: 100%; 
-    position: relative; /*añadido*/
+    position: relative; /*añadido*/     
+    max-width: 1200px;
 }
 
 .manzanita
 {
     display:block;
+    padding-top: 3px;
     /*
         display:block;
         position: fixed;
@@ -47,7 +49,8 @@ header
     align-items: stretch;    
     height: 100%;
     background-color: #3677B6;
-    box-shadow: 0px 3px 5px #0000003b;
+    box-shadow: 0px 3px 5px #0000003b;        
+    padding-left: 10px;
     /*padding: 5px; añadido*/
     /*
         position: fixed;
@@ -91,9 +94,8 @@ header
     text-decoration: none;
     color: #ffffff; /*añadido*/
     font-weight: 600; /*añadido*/
-    color: #ffffff;  
     text-align: center;
-    padding-top: 7px;
+    padding-top: 6.5px;
     /*
     box-shadow: 1px 1px 6px black; */
     /* border-radius: 5px;    
@@ -110,8 +112,11 @@ header
 
 nav > a:hover
 {    
-    background: #ffffff;
-    color: #3677b6;
+    /* background: #ffffff;
+    color: #3677b6;  */
+    cursor: pointer;     
+    transition: all 200ms 0s; 
+    border-bottom: 3px solid #E8E7EA;
     /* background: aliceblue; */
 }
 
@@ -132,16 +137,13 @@ p
     padding: 5px;
 }
 .menuAlt:hover
-{
-   background-color: aliceblue;
+{   
    border-radius: 5px;
-   cursor: pointer;
 }
 
 main
 {
-    margin-top: 36px;
-    max-width: 1366px;
+    max-width: 1200px;
 }
 
 main > div
@@ -159,7 +161,8 @@ h1
     text-align: center;
     margin: 30px;
     border-radius: 4px;    
-    background: -webkit-linear-gradient(top,#92BDE6,#69A8E3, #4B9FEE);
+    /* background: -webkit-linear-gradient(top,#92BDE6,#69A8E3, #4B9FEE); */
+    background: #1E90FF;
     font-size: 1.2em;
     border-width: 1px;
     white-space: nowrap; /*añadido*/
@@ -203,6 +206,15 @@ h1
         font-size: 12px;
     }    
 
+    nav > a:hover
+    {    
+        /* background: #ffffff;
+        color: #3677b6;  */
+        border-bottom: none;
+        border-right: 3px solid #E8E7EA;
+        /* background: aliceblue; */
+    }
+
     .navNormal
     {
         display: flex; 
@@ -227,7 +239,7 @@ h1
         border-radius: 8px;
         transition: height cubic-bezier(0,.49,.77,1.48) 1000ms 0ms;
     }
-
+         
     h1
     {
         font-size: 1.2em;
@@ -238,6 +250,8 @@ h1
         margin: 10px;
     }
 
+
+
     .menuAltImage
     {
         display: flex;
@@ -246,11 +260,6 @@ h1
         right: 0px;
         margin-right: 2px;
         margin-left: auto;
-    }
-    nav > a:hover
-    {
-        background: #ffffff;
-        color: #3677b6;
     }
 }
 
