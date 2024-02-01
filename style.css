@@ -6,7 +6,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Raleway;
+    font-family: 'Ubuntu',Raleway,system-ui;
     font-weight: 50px;
 }
 
