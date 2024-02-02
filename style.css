@@ -264,9 +264,9 @@ h1
         width: 200px;
         /* transition: height cubic-bezier(0,.49,.77,1.48) 500ms 0ms; */
          transition: height linear 500ms 0ms; 
-        background-color: rgba(255,255,255,0.1);
         backdrop-filter: blur(5px);
         border-radius: 4px;
+        z-index: 1;
     } 
 
     .navNormal.navAlt .bordeAnimado
@@ -293,13 +293,14 @@ h1
     {
         display: none;
     } 
-
-    .navNormal.navAlt .bordeAnimado::backdrop
-    {
-        opacity: 0.5;
-    }   
-
+     
     
+    .bodyBlur
+    {
+        backdrop-filter: blur(10px);        
+        background-color: rgba(255,255,255,0.1);
+        z-index: 1;
+    }s
     
 
     

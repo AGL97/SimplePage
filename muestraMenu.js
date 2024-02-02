@@ -1,11 +1,14 @@
-let refMenuBtn = document.querySelector(".menuAltImage")
+let refMenuBtn = document.querySelector(".menuAltImage");
 
-let refNav = document.querySelector("nav")
+let refNav = document.querySelector("nav");
 
-let refLinks = document.querySelectorAll("a")
+let refLinks = document.querySelectorAll("a");
+
+let refBody = document.querySelector("body");
 
 refMenuBtn.addEventListener("click",function () {
-    refNav.classList.toggle("navAlt")    
+    refNav.classList.toggle("navAlt")
+    refBody.classList.toggle("bodyBlur")  
 })
 
 
@@ -20,6 +23,7 @@ window.addEventListener("resize",function () {
 refLinks.forEach(i => {
     i.addEventListener("click",function () {
         refNav.classList.toggle("navAlt") 
+        refBody.classList.toggle("bodyBlur")
          
     })
 });
