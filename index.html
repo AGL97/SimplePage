@@ -6,9 +6,11 @@
     <title>Simple Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resetStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="sideBarStyle.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> -->
+    
     <base href="../SimplePage/">
     <script src="muestraMenu.js" defer></script>
 </head>
@@ -24,25 +26,26 @@
             <nav class="navNormal">
                 
                 <div class="bordeAnimado">
-                    <a href="#principal">
-                        Home
+                    <a class="navOpt" href="#principal">
+                        Home 
                     </a>
                     <div class="borde"></div>
+                    
                 </div> 
                 <div class="bordeAnimado">
-                    <a href="#fotos">
+                    <a class="navOpt" href="#fotos">
                         Photos
                     </a>
                     <div class="borde"></div>
                 </div>
                 <div class="bordeAnimado">
-                    <a href="#reseña">
+                    <a class="navOpt" href="#reseña">
                         Review
                     </a>
                     <div class="borde"></div>
                 </div>
                 <div class="bordeAnimado">
-                    <a href="#about">
+                    <a class="navOpt" href="#about">
                         About
                     </a>
                     <div class="borde"></div>
@@ -67,6 +70,43 @@
     
 
     <main>
+            <section class="sideBar">
+                <ul class="secciones">
+                    <li>
+                        <label>Seccion1</label>
+                        <ul class="seccion">
+                            <li><label>Articulo 1</label></li>
+                            <li><label>Articulo 2</label></li>
+                            <li><label>Articulo 3</label></li>
+                        </ul> 
+                    </li>
+                    <li>
+                        <label>Seccion2</label>
+                        <ul class="seccion">
+                            <li><label>Articulo 1</label></li>
+                            <li><label>Articulo 2</label></li>
+                            <li><label>Articulo 3</label></li>
+                        </ul> 
+                    </li>
+                    <li>
+                        <label>Seccion3</label>
+                        <ul class="seccion">
+                            <li><label>Articulo 1</label></li>
+                            <li><label>Articulo 2</label></li>
+                            <li><label>Articulo 3</label></li>
+                        </ul> 
+                    </li>
+                    <li>
+                        <label class="seccion">Seccion4</label>
+                        <ul>
+                            <li><label>Articulo 1</label></li>
+                            <li><label>Articulo 2</label></li>
+                            <li><label>Articulo 3</label></li>
+                        </ul> 
+                    </li>
+                </ul>
+            </section>
+
             <div id="principal">
                 <h1>Home</h1>
                 <p>

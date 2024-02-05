@@ -2,7 +2,7 @@ let refMenuBtn = document.querySelector(".menuAltImage");
 
 let refNav = document.querySelector("nav");
 
-let refLinks = document.querySelectorAll("a");
+let refLinks = document.querySelectorAll("navOpt");
 
 let refBody = document.querySelector("body");
 
