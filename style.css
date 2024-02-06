@@ -147,6 +147,7 @@ p
 {
     display:block;
     padding-top: 3px;
+    cursor: pointer;
     /*
         display:block;
         position: fixed;
@@ -250,7 +251,7 @@ h1
         position: absolute;
         top: 36.32px;
         right: 0;
-        width: 200px;
+        width: 80px;
         overflow: hidden;
         height: 0px;
         background-color: "transparent";
@@ -265,8 +266,8 @@ h1
         top: 37.32px;
         right: 0px;
         margin-right: 2px;
-        height: 500px;
-        width: 200px;        
+        width: 80px;
+        height: 500px;     
         /* transition: height cubic-bezier(0,.49,.77,1.48) 500ms 0ms; */
         transition: height linear 500ms 0ms; 
         background-color: rgba(161, 153, 153, 0.2);
@@ -281,13 +282,13 @@ h1
     {
         position: relative;
         width: 100%;
-        height: 50px;
+        height: 30px;
         margin-bottom: 2px;
     } 
 
     .navNormal.navAlt .bordeAnimado > a
     { 
-        min-width: 192px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
