@@ -1,25 +1,36 @@
 .sideBar
 {
+    display: flex;
     position: absolute;
-    width: 80px;
+    width: 0px;
     height: 300px;
     background-color:rgba(161, 153, 153, 0.2);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);    
 }
 
+.sideBar.showSideBar
+{
+    width: 80px;
+}
 
-.sideBar .secciones
+.sideBar.showSideBar .secciones
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    list-style: none;
-    /* overflow: hidden; */
+    align-items: center; 
+    width: 0; 
+    overflow: hidden;  
+}
+
+.sideBar.showSideBar .secciones.showSecciones
+{
     
+    overflow: visible;  
+    width: 80px;      
 }
 
 
-.sideBar .secciones li
+.sideBar.showSideBar .secciones.showSecciones li
 {
     position: relative;
     height: 30px;
@@ -28,24 +39,59 @@
 
 .sideBar .secciones li label
 {
+    display: none;
+}
+
+.sideBar.showSideBar .secciones.showSecciones li label
+{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     background-color: #eee;
+    width: 80px;
     height: 100%;
 }
 
-.sideBar .secciones li label:hover
+.sideBar.showSideBar .secciones.showSecciones li label:hover
 {
     background-color: #c9c6c6;
+    
 }
 
-.sideBar .secciones li .seccion
+.sideBar.showSideBar .secciones.showSecciones li .seccion
 {
     position: relative;
-    display: flex;
+    display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -30px;
     left: 80px;
+}
+
+/* .sideBar.showSideBar .secciones li .seccion 
+{
+    display: none;
+} */
+
+.sideBar.showSideBar .secciones.showSecciones li:hover
+{
+    .seccion
+    {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+ul
+{    
+    list-style: none;
 }

@@ -9,10 +9,7 @@ html
 {
 	scroll-behavior: smooth;
 }
-body
-{
-	min-height:100dvh;
-}
+
 
 h1,h2,h3,h4
 {
