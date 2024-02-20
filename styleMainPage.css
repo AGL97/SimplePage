@@ -9,7 +9,6 @@ body
     justify-content: center;
     align-items: center;
     font-family: 'Ubuntu',Raleway,system-ui;
-    font-weight: 50px;
 }
 
 header
@@ -72,6 +71,7 @@ header
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 
@@ -79,15 +79,15 @@ header
 .navNormal .bordeAnimado > a
 {  
     position: relative;
-    max-width: 75px;/*añadido*/
-    min-width: 70px;/*añadido*/
-    height: 100%;
     background: #3677B6;
     text-decoration: none;
     color: #ffffff; /*añadido*/
     font-weight: 600; /*añadido*/
     text-align: center;
     z-index: 0;
+    text-align: center;
+    padding-right: 2px;
+    padding-left: 2px;
     /*
     box-shadow: 1px 1px 6px black; */
     /* border-radius: 5px;    
@@ -107,13 +107,13 @@ header
 {
     background-color: #1F2B42;
     width: 0px;
-    height: 2px;
+    height: 1.5px;
 }
 
 .navNormal .bordeAnimado:hover
 {    
     .borde{
-        width: 60px;
+        width: 100%;
         transition: width 600ms 0s;
     }    
 }
