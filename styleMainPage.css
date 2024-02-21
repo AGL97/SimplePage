@@ -1,6 +1,5 @@
 body
 {
-    /*background-color: #262b30;*/
     position: relative;
     top: 0px;
     background-color: #ffffff;
@@ -14,7 +13,7 @@ body
 header
 {
     width: 100%; 
-    position: relative; /*añadido*/    
+    position: relative;    
     top: 0;
     background-color: #3677B6;    
     box-shadow: 0px 3px 5px #0000003b;  
@@ -22,7 +21,7 @@ header
 
 .containerNav
 { 
-    display: flex; /*añadido*/
+    display: flex;
     align-items: stretch;
     position: relative;
     min-width: 240px;
@@ -31,22 +30,6 @@ header
     margin-left: auto;
     height: 100%;      
     padding-left: 10px;
-    /*padding: 5px; añadido*/
-    /*
-        position: fixed;
-    */    
-    /*
-        top: 0;
-    */    
-    /*
-        height: 40px;
-    */    
-    /*
-        border-width: 1px;
-    */
-    /*
-        border-style: solid;
-    */
 }
 
 .navNormal
@@ -54,15 +37,7 @@ header
     display: flex; 
     margin-left: auto;
     align-items: center;
-    text-align: center;
-    /*
-    position:fixed;    
-    top: 0px;
-    right: 0px;
-    margin-top: 3px;
-    margin-right: 1px;
-    background-color: "transparent";
-    */
+    text-align: center;    
 }
 
 .navNormal .bordeAnimado 
@@ -81,24 +56,14 @@ header
     position: relative;
     background: #3677B6;
     text-decoration: none;
-    color: #ffffff; /*añadido*/
-    font-weight: 600; /*añadido*/
+    color: #ffffff; 
+    font-weight: 600; 
     text-align: center;
     z-index: 0;
     text-align: center;
     padding-right: 2px;
     padding-left: 2px;
-    /*
-    box-shadow: 1px 1px 6px black; */
-    /* border-radius: 5px;    
-    margin-top: 3px;
-    margin-right: 5px;   
-    margin-left: 4px; */    
-    /*
-    margin-right: 3px; añadido
-    margin-left: 3px; añadido
-    margin-top: 3px; añadido
-    padding: 5px;*/   
+      
 }
 
 
@@ -119,6 +84,7 @@ header
 }
 
 
+/******************** Borde Alternativo  ********************/
 
 /* .navNormal .bordeAnimado:hover
 {  
@@ -136,14 +102,13 @@ header
 
 p
 {
-    color: black; /*añadido*/
+    color: black; 
     font-family: system-ui;
     font-weight: 300;
     text-align: justify;
     text-wrap:pretty;
     margin-left: 10px;
     margin-right: 10px;    
-    /* color: aliceblue;  */
 }
 
 .manzanita
@@ -151,26 +116,11 @@ p
     display:block;
     padding-top: 3px;
     cursor: pointer;
-    /*
-        display:block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        margin-top: 3px;
-    */    
 }
 
 .menuAltImage
 {
-    display: none;
-    /*
-        display:block;
-        position: hidden;
-        top: 0;
-        right: 0;
-        z-index: 1;
-    */    
+    display: none;  
 }
 
 .menuAlt
@@ -193,8 +143,8 @@ main > div
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-bottom: 1px solid #9b95957d; /*añadido*/
-    padding-bottom: 25px; /*añadido*/
+    border-bottom: 1px solid #9b95957d;
+    padding-bottom: 25px;
 }
 
 h1
@@ -202,43 +152,13 @@ h1
     text-align: center;
     margin: 30px;
     border-radius: 4px;    
-    /* background: -webkit-linear-gradient(top,#92BDE6,#69A8E3, #4B9FEE); */
     background: #1E90FF;
     font-size: 1.2em;
     border-width: 1px;
-    white-space: nowrap; /*añadido*/
-    padding: 5px 8px; /*añadido*/
-    color: #fff; /*añadido*/
-
-    /* border-style: solid;
-    border-color: darkseagreen; */
-    /* width: 20%; */
-    /* max-width: 150px; */    
-    /*
-        border-radius: 5px;
-    */
+    white-space: nowrap;
+    padding: 5px 8px; 
+    color: #fff; 
 }
-
-
-
-
-/* .contedorBarra
-{
-    margin-top: 5px;
-    width: 500px;
-    height: 40px;
-    background-color: #fff; 
-    border: 1px solid #333;
-}
-
-.barra
-{
-    width: 0;
-    height: 38px; 
-    background-color: rgb(76, 243, 42);
-} */
-
-
 
 @media (width<720px)
 {
@@ -271,7 +191,6 @@ h1
         margin-right: 2px;
         width: 80px;
         height: 500px;     
-        /* transition: height cubic-bezier(0,.49,.77,1.48) 500ms 0ms; */
         transition: height linear 500ms 0ms; 
         background-color: rgba(161, 153, 153, 0.2);
         backdrop-filter: blur(1px);
@@ -306,16 +225,12 @@ h1
         display: none;
     } 
      
- 
-
-    
-         
     h1
     {
         font-size: 1.2em;
         border-width: 1px;
-        white-space: nowrap; /*añadido*/
-        padding: 5px 8px; /*añadido*/
+        white-space: nowrap; 
+        padding: 5px 8px; 
         text-align: center;
         margin: 10px;
     }
