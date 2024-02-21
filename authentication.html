@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleAuthentication.css">
     <link rel="stylesheet" href="styleReset.css">
+    <script src="auth.js" defer></script>
     <title>Login</title>
 </head>
 <body>
@@ -14,21 +15,25 @@
             <form action="#" method="post" name="formDatas" class="formDatas" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
                 <div class="inputsContainers">
                     <label for="inFullName">FullName: </label>
-                    <input type="text"  placeholder="Juan Pérez Pérez" maxlength="15" minlength="10" autocapitalize="yes" class="inputs" autofocus="true" required>
+                    <input type="text" class="inputName"  placeholder="Juan Pérez Pérez" maxlength="25" minlength="10" autocapitalize="yes" required>
                 </div>
                 <div class="inputsContainers">                
                     <label for="inEmail">Email: </label>
-                    <input type="email" class="inputs"  placeholder="juan@gmail.com" autocapitalize="yes" required>
+                    <input type="email" class="inputEmail"  placeholder="juan@gmail.com" autocapitalize="yes" required>
                 </div>
                 <div class="inputsContainers">                    
-                    <input type="button" class="buttonSubmit" value="Sig in">
+                    <input type="reset" class="buttonSubmit" value="Sig in">
                 </div>
             </form>
+            
         </section>
 
+        <button class="auxButton change">change type</button>
+        <button class="auxButton clean">clean</button>
+
         <section class="tabla">
-            <div class="FullName">Full Name</div>
-            <div class="email">Email</div>
+            <label class="fullNameLabel">Full Name</label>
+            <label class="emailLabel">Email</label>
         </section>
     </main>
 </body>

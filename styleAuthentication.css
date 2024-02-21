@@ -49,16 +49,41 @@ h1
 .inputsContainers
 {
     display: flex;
-    position: relative;
-    margin: 5px;
+    position: relative;    
     font-size: 1.3em;
     font-weight: 400;        
-    width: 100%;    
+    width: 100%; 
+    margin-top: 10px;  
 }
 
-.inputs
+
+input
 {
-    margin-left: 5px;
+    border: 2px solid #171717;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 0 3px #171717;
+    margin-left: 15px;
+}
+
+input[type="email"]
+{
+    margin-left: 12px ;
+}
+
+.inputsContainers > input:focus-visible
+{
+    transform: scale(1.1);
+}
+
+.inputContainers:has(:focus-visible:valid) > input
+{
+    outline-color: rgba(28, 240, 28);
+}
+
+.inputsContainers:has(:focus-visible:invalid) > input
+{
+    outline-color: rgb(161, 56, 56);
 }
 
 .buttonSubmit
@@ -68,4 +93,36 @@ h1
     margin-right: auto;
 }
 
+.buttonSubmit:hover
+{
+    background-color: #e7e5e5;
+}
+
+.tabla
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 2.5em;
+    font-family: "consolas";
+    color: #333;
+}
+
+.auxButton
+{
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: system-ui;
+    text-align: center;
+    padding: 5px;
+}
+
+.auxButton:hover
+{
+    background-color: #e7e5e5;
+}
 
