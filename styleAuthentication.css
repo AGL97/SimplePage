@@ -109,19 +109,8 @@ input[type="email"]
     color: #333;
 }
 
-.auxButton
+.messageRegister
 {
-    border-radius: 5px;
-    margin-top: 30px;
-    font-size: 1.4em;
-    font-weight: 600;
-    font-family: system-ui;
-    text-align: center;
-    padding: 5px;
+    color: #333;
+    background-color: rgb(172, 167, 167);
 }
-
-.auxButton:hover
-{
-    background-color: #e7e5e5;
-}
-
